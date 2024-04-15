@@ -39,9 +39,7 @@ Overall, the code is structured to handle file uploads, display data in HTML tab
 
 
 
-
-
-
+Output Screenshots:
 
 <img width="383" alt="image" src="https://github.com/samhith02/Unified-data-search-app-sys/assets/167102207/e3c01134-80b4-42ff-9640-8d1cff5506d4">
 <img width="387" alt="image" src="https://github.com/samhith02/Unified-data-search-app-sys/assets/167102207/cfc319bd-ac64-4f76-a05d-f76560a362fe">
