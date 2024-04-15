@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unified Data Search Application System</title>
+    
+    <link rel='stylesheet' href='./main.css' />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/string-similarity/3.0.0/string-similarity.min.js"></script>
+
+</head>
+<body>
+  <div class="container">
+  <h1 style="color: white;">Unified Data Search Application System<br>for key financials of SE's (Supervised Entities)</h1>
+      
+    <input type="file" id="fileInput">
+<!-- Add the search bar -->
+<div class="search-container">
+  <div class="search-bar-container">
+    <input type="text" id="searchQuery" placeholder="Search...." style="width: 1000px">
+  </div>
+    
+    <!-- Add the view dropdowns button -->
+<button onclick="toggleDropdowns()">View Dropdowns</button>
+    <!-- Search and dropdown container -->
+    <div class="search-container">
+      <!-- Search bars -->
+      <div class="search-bar-container">
+        <input type="text" id="searchDropdown1" placeholder="Search Dropdown 1">
+      </div>
+      <div class="search-bar-container">
+        <input type="text" id="searchDropdown2" placeholder="Search Dropdown 2">
+      </div>
+      <div class="search-bar-container">
+        <input type="text" id="searchDropdown3" placeholder="Search Columns">
+      </div>
+
+      <!-- Dropdowns -->
+      <div class="search-dropdown-container" id="dropdownContainer1"></div>
+      <div class="search-dropdown-container" id="dropdownContainer2"></div>
+      <div class="search-dropdown-container" id="dropdownContainer3"></div>
+    </div>
+      
+<!-- Add the graph button -->
+<button onclick="toggleGraph()">Generate Trend Graph</button>
+<!-- Add a container div for the graph and close button -->
+<div class="graph-container" id="graphContainer" style="display: none;">
+  <!-- The graph will be rendered inside this div -->
+  <canvas id="trendGraph" style="width: 1150px; height: 400px;"></canvas>
+  <!-- Close button -->
+  <button id="closeGraphButton" onclick="closeGraph()">CLOSE</button>
+</div>
+
+    <div class="header-container" id="headerContainer"></div>
+    </div>
+    <div id="sheetContainer"></div>
+  </div>
+
+  <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

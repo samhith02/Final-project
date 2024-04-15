@@ -1,0 +1,179 @@
+
+ body {
+    font-family: Arial, sans-serif;
+    background-image: url('sky2.jpg'); /* Replace 'background.jpg' with your image file's path */
+    background-size: cover; /* Adjust the background size */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keep the background image fixed while scrolling */
+    margin: 0;
+    padding: 20px;
+  }
+    
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+   input[type="file"],
+    input[type="text"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      color: #ADD8E6  
+    }
+    .header-container {
+      display: none; /* Hide the header */
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: #87CEEB;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #696969;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Styling for search results */
+    .highlight {
+      background-color: #fffbcc;
+    }
+
+    /* Additional styling for table rows */
+    tr:nth-child(even) {
+      background-color: #F0F8FF;
+    }
+
+    tr:hover {
+      background-color: #FFFFFF;
+    }
+
+    /* Colors for column headers */
+    th:nth-child(1) {
+      background-color: #fce4ec;
+    }
+
+    th:nth-child(2) {
+      background-color: #f8bbd0;
+    }
+
+    th:nth-child(3) {
+      background-color: #e1bee7;
+    }
+
+    /* th:nth-child(n) {
+      background-color: #color-code;
+    } */
+
+    #dropdownContainer {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    #dropdownContainer div {
+      flex-basis: 30%;
+    }
+
+    /* Styling for dropdowns */
+    select {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    } 
+    /* New styles for improved layout */
+    .search-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .search-bar-container,
+    .search-dropdown-container {
+      flex-basis: calc(30% - 20px);
+    }  
+
+    .search-bar-container input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #7DF8FF; /* Add background color */
+    color: #000; 
+}
+
+.search-dropdown-container select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ADD8E6; /* Add background color */
+}
+
+      .graph-container {
+  width: 1150px;
+  height: 400px;
+}
+#trendGraph {
+  width: 1300px;
+  height: 500px;
+  background-color: #F9FFFF; /* Add white background color */
+}
+      
+   /* Styling for the close button */
+#closeGraphButton {
+  position: absolute;
+  top: 440px;
+  right: 30px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 20%;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+   /* Apply consistent styling for buttons */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
